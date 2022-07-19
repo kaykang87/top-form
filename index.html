@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="logo-container">
+        <img src="img/odin-lined.png" alt="TOP Logo" />
+        <h1 class="logo-text">ODIN</h1>
+      </div>
+      <p>
+        Photo by
+        <a href="https://unsplash.com/@haliewestphoto" target="_blank"
+          >Halie West</a
+        >
+        on Unsplash
+      </p>
+    </div>
+    <div class="main-content">
+      <div class="top-content">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started. <br /><br />
+          You <em>know</em> you want to.
+        </p>
+      </div>
+      <div class="form-content">
+        <form action="#" method="post">
+          <p>Let's do this!</p>
+          <div class="grid-container">
+            <div class="form-input first-name">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" required/>
+            </div>
+            <div class="form-input last-name">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" required/>
+            </div>
+            <div class="form-input email">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required/>
+            </div>
+            <div class="form-input password-1">
+              <label for="password-1">PASSWORD</label>
+              <input type="password" id="password-1" name="password" required/>
+            </div>
+            <div class="form-input password-2">
+              <label for="password-2">CONFIRM PASSWORD</label>
+              <input type="password" id="password-2" name="password" required/>
+              <span id="message"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="bottom-content">
+        <button class="btn btn-primary" type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
